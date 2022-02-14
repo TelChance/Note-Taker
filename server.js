@@ -1,7 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
-const database = require("./db/db")
+const database = require("./Develop/db/db.json")
 
 var app = express();
 var PORT = process.env.PORT || 3000;
@@ -25,7 +25,7 @@ app.route("/api/notes")
     })
 
     .post(function (req, res) {
-        let jsonFilePath = path.join(__dirname, "/db/db.json");
+        let jsonFilePath = path.join(__dirname, "./Develop/db/db.json");
         let newNote = req.body;
 
         let highestId = 99;
