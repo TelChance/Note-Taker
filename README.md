@@ -14,3 +14,4 @@ To install al you need to do is got my github and clone the code in your termina
 
 ## Link
 
+https://telchance.github.io/Note-Taker/
